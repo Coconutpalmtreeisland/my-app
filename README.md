@@ -11,7 +11,13 @@
 
 rafce
 
+## 수정 업데이트
 git add .
 git status
 git commit -m "dd"
 git push -u origin main
+
+npm i sass 버전관리
+
+## 라이브러리 설치
+sass를 설치 : `npm install sass`
