@@ -1,0 +1,73 @@
+// 100 thin
+// 200 ExtraLight
+// 300 Light
+// 400 Regular
+// 500 Medium
+// 600 SemiBold
+// 700 Bold
+// 800 ExtraBold
+// 900 Black
+
+@font-face {
+    font-family: "yeongdo";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../../fonts/Yeongdo.woff2") format("woff2"),
+         url("../../fonts/Yeongdo.woff") format("woff");
+    font-display: swap;
+} 
+.yeongdo {
+    font-family: "yeongdo";
+}
+
+@font-face {
+    font-family: "classicType";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/classicType/classicType.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/gh/websfont/classicType/classicType.woff") format("woff"),;
+    font-display: swap;
+} 
+.classicType {
+    font-family: "classicType";
+}
+
+@font-face {
+    font-family: "museumClassic";
+    font-weight: 300;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/museumClassic/museumClassic-Light.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/gh/websfont/museumClassic/museumClassic-Light.woff") format("woff"),;
+    font-display: swap;
+}
+@font-face {
+    font-family: "museumClassic";
+    font-weight: 500;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/museumClassic/museumClassic-Medium.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/gh/websfont/museumClassic/museumClassic-Medium.woff") format("woff"),;
+    font-display: swap;
+}
+@font-face {
+    font-family: "museumClassic";
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/museumClassic/museumClassic-Bold.woff2") format("woff2"),
+         url("https://cdn.jsdelivr.net/gh/websfont/museumClassic/museumClassic-Bold.woff") format("woff");
+    font-display: swap;
+}
+.museumClassic {
+    font-family: "museumClassic";
+}
+.museumClassic300 {
+    font-family: "museumClassic";
+    font-weight: 300;
+}
+.museumClassic500 {
+    font-family: "museumClassic";
+    font-weight: 500;
+}
+.museumClassic700 {
+    font-family: "museumClassic";
+    font-weight: 700;
+}
