@@ -10,3 +10,8 @@
 ## 사용 스택
 
 rafce
+
+git add .
+git status
+git commit -m "dd"
+git push -u origin main
