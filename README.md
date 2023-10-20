@@ -14,7 +14,7 @@
 ## 수정 업데이트
 git add .
 git status
-git commit -m "dd"
+git commit -m "이름"
 git push -u origin main
 
 npm i sass 버전관리
