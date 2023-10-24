@@ -56,3 +56,91 @@
         }
     }
 }
+
+// 비디오 상세 페이지
+
+.video__view {
+    
+    .video__play {
+        width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    .video__info {
+
+        .video__title {
+            padding-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            border-bottom: 1px solid var(--white300);
+            padding-bottom: 15px;
+        }
+        .video__channel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            margin-top: 40px;
+
+            .id {
+                font-family: "SCoreDream";
+                font-weight: 800;
+                color: var(--black);
+                background-color: var(--white100);
+                border: 1px solid var(--white300);
+                border-radius: 30px;
+                padding: 10px 20px;
+
+                a {
+
+                }
+            }
+            .count {
+                span {
+                    padding: 7px 20px;
+                    border-radius: 30px;
+                    margin-left: 5px;
+                    background-color: var(--white100);
+                    color: var(--black);
+                    font-family: "SCoreDream";
+                }
+                .view svg {
+                    vertical-align: -4px;
+                }
+                .like svg {
+                    vertical-align: -3px;
+                }
+                svg {
+                    color: var(--black);
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: -5px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .desc {
+        border-top: 1px solid var(--black300);
+        font-family: "SCoreDream";
+        white-space: pre-line;
+        padding-top: 35px;
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        color: var(--white300);
+
+        .author {
+            @include line-one;
+            font-size: 14px;
+            text-decoration: underline;
+            text-underline-position: under;
+            margin-top: 5px;
+        }
+        &:hover {
+            color: var(--white100);
+        }
+    }
+}
