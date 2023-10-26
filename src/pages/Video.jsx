@@ -11,11 +11,18 @@ import { BiCommentDetail } from 'react-icons/bi'
 const Video = () => {
     const { videoId } = useParams();
     const [ videoDetail, setVideoDetail ] = useState(null);
+    const [ comments, setComments ] = useState([]);
 
     useEffect(() => {
         fetchFromAPI(`videos?part=snippet,statistics&id=${videoId}`)
             .then((data) => {
                 setVideoDetail(data.items[0]);
+                console.log(data);
+            });
+
+        fetchFromAPI(`commentThreads?part=snippet&videoId=${videoId}`)
+            .then((data) => {
+                setComments(data.items);
                 console.log(data);
             });
     }, [videoId]);
@@ -52,6 +59,18 @@ const Video = () => {
                     </p>
                     <div className='info'>
                         <Link to={`/channel/${videoDetail.snippet.channelId}`} className='author'>{videoDetail.snippet.channelTitle}</Link>
+                    </div>
+                    <div className='comments'>
+                        {comments.map((comment, key) => (
+                            <div className="comment__all" key={key}>
+                                <div className="comment__nickname">
+                                    {comment.snippet.topLevelComment.snippet.authorDisplayName}
+                                </div>
+                                <div className="comment__cont">
+                                    {comment.snippet.topLevelComment.snippet.textOriginal}
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             )}

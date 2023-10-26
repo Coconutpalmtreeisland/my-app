@@ -22,7 +22,6 @@ const Channel = () => {
                 console.log(videoData);
                 setChannelVideo(videoData.items);
 
-                
             } catch (error){
                 console.log("Error fectching data", error)
             }
